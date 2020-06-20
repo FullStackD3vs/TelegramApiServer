@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "877345d8ecbc0435bbe435a8c1a4abd6",
+    "content-hash": "4d62076893e6a13c9286c827fbabef0c",
     "packages": [
         {
             "name": "amphp/amp",
@@ -203,16 +203,16 @@
         },
         {
             "name": "amphp/dns",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/dns.git",
-                "reference": "9d7e57f37d21bfed8ff2e78db52b99d45ce0c215"
+                "reference": "8cf2ccc4fa5a97f15b0b11087b22d2b544e45ab2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/dns/zipball/9d7e57f37d21bfed8ff2e78db52b99d45ce0c215",
-                "reference": "9d7e57f37d21bfed8ff2e78db52b99d45ce0c215",
+                "url": "https://api.github.com/repos/amphp/dns/zipball/8cf2ccc4fa5a97f15b0b11087b22d2b544e45ab2",
+                "reference": "8cf2ccc4fa5a97f15b0b11087b22d2b544e45ab2",
                 "shasum": ""
             },
             "require": {
@@ -229,7 +229,7 @@
             "require-dev": {
                 "amphp/php-cs-fixer-config": "dev-master",
                 "amphp/phpunit-util": "^1",
-                "phpunit/phpunit": "^6"
+                "phpunit/phpunit": "^6 || ^7 || ^8 || ^9"
             },
             "type": "library",
             "autoload": {
@@ -276,7 +276,7 @@
                 "dns",
                 "resolve"
             ],
-            "time": "2019-11-28T20:10:22+00:00"
+            "time": "2020-06-19T20:28:16+00:00"
         },
         {
             "name": "amphp/file",
@@ -611,16 +611,16 @@
         },
         {
             "name": "amphp/http-server",
-            "version": "v2.0.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/http-server.git",
-                "reference": "9c38d7be6e115ce0ced9f78d2375c28de5871418"
+                "reference": "30063e245559095ff99a320b88a8a88ff719cc6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/http-server/zipball/9c38d7be6e115ce0ced9f78d2375c28de5871418",
-                "reference": "9c38d7be6e115ce0ced9f78d2375c28de5871418",
+                "url": "https://api.github.com/repos/amphp/http-server/zipball/30063e245559095ff99a320b88a8a88ff719cc6e",
+                "reference": "30063e245559095ff99a320b88a8a88ff719cc6e",
                 "shasum": ""
             },
             "require": {
@@ -649,6 +649,11 @@
                 "ext-zlib": "Allows GZip compression of response bodies"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Amp\\Http\\Server\\": "src"
@@ -689,7 +694,7 @@
                 "non-blocking",
                 "server"
             ],
-            "time": "2020-03-10T20:37:39+00:00"
+            "time": "2020-06-20T14:40:33+00:00"
         },
         {
             "name": "amphp/http-server-form-parser",
@@ -822,67 +827,6 @@
                 "server"
             ],
             "time": "2019-08-21T15:51:20+00:00"
-        },
-        {
-            "name": "amphp/log",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/amphp/log.git",
-                "reference": "25dcd3b58622bd22ffa7129288edb85e0c17081a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/amphp/log/zipball/25dcd3b58622bd22ffa7129288edb85e0c17081a",
-                "reference": "25dcd3b58622bd22ffa7129288edb85e0c17081a",
-                "shasum": ""
-            },
-            "require": {
-                "amphp/amp": "^2",
-                "amphp/byte-stream": "^1.3",
-                "monolog/monolog": "^2 || ^1.23",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "amphp/php-cs-fixer-config": "dev-master",
-                "amphp/phpunit-util": "^1.1",
-                "phpunit/phpunit": "^8 || ^7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Amp\\Log\\": "src"
-                },
-                "files": [
-                    "src/functions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aaron Piotrowski",
-                    "email": "aaron@trowski.com"
-                },
-                {
-                    "name": "Niklas Keller",
-                    "email": "me@kelunik.com"
-                }
-            ],
-            "description": "Non-blocking logging for PHP based on Amp and Monolog.",
-            "homepage": "https://github.com/amphp/log",
-            "keywords": [
-                "amp",
-                "amphp",
-                "async",
-                "log",
-                "logger",
-                "logging",
-                "non-blocking"
-            ],
-            "time": "2019-09-04T15:31:40+00:00"
         },
         {
             "name": "amphp/mysql",
@@ -1881,16 +1825,16 @@
         },
         {
             "name": "danog/madelineproto",
-            "version": "dev-master",
+            "version": "dev-memory_optimizations",
             "source": {
                 "type": "git",
-                "url": "https://github.com/danog/MadelineProto.git",
-                "reference": "838cf11ff61a975121e11e50caa4e67c6819f192"
+                "url": "https://github.com/xtrime-ru/MadelineProto.git",
+                "reference": "368710b5bdb3d18dd2f533a2f480d0187717d445"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danog/MadelineProto/zipball/838cf11ff61a975121e11e50caa4e67c6819f192",
-                "reference": "838cf11ff61a975121e11e50caa4e67c6819f192",
+                "url": "https://api.github.com/repos/xtrime-ru/MadelineProto/zipball/368710b5bdb3d18dd2f533a2f480d0187717d445",
+                "reference": "368710b5bdb3d18dd2f533a2f480d0187717d445",
                 "shasum": ""
             },
             "require": {
@@ -1900,7 +1844,6 @@
                 "amphp/file": "^1",
                 "amphp/http-client": "^4",
                 "amphp/http-client-cookies": "^1",
-                "amphp/log": "^1.1",
                 "amphp/mysql": "^2.0",
                 "amphp/socket": "^1",
                 "danog/dns-over-https": "^0.2",
@@ -1956,7 +1899,46 @@
                     "src/polyfill.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "danog\\MadelineProto\\Test\\": "tests/danog/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "git submodule init && git submodule update"
+                ],
+                "build": [
+                    "@docs",
+                    "@cs-fix",
+                    "@psalm"
+                ],
+                "check": [
+                    "@cs",
+                    "@test"
+                ],
+                "test-php7": [
+                    "tests/test-conversion.sh 70"
+                ],
+                "test-php56": [
+                    "tests/test-conversion.sh 5"
+                ],
+                "cs": [
+                    "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix -v --diff --dry-run"
+                ],
+                "cs-fix": [
+                    "PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix -v --diff"
+                ],
+                "psalm": [
+                    "psalm"
+                ],
+                "docs": [
+                    "php tools/build_docs.php"
+                ],
+                "test": [
+                    "@php -dzend.assertions=1 -dassert.exception=1 ./vendor/bin/phpunit --coverage-text --config tests/phpunit.xml"
+                ]
+            },
             "license": [
                 "AGPL-3.0-only"
             ],
@@ -1970,25 +1952,22 @@
             "homepage": "https://docs.madelineproto.xyz",
             "keywords": [
                 "GB",
-                "Messenger",
+                "PHP",
                 "audio",
                 "bytes",
                 "client",
                 "files",
+                "messenger",
                 "mtproto",
-                "php",
                 "protocol",
                 "stickers",
                 "telegram",
                 "video"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/danog",
-                    "type": "github"
-                }
-            ],
-            "time": "2020-06-16T16:00:15+00:00"
+            "support": {
+                "source": "https://github.com/xtrime-ru/MadelineProto/tree/memory_optimizations"
+            },
+            "time": "2020-06-20T21:28:09+00:00"
         },
         {
             "name": "danog/magicalserializer",
@@ -2560,97 +2539,6 @@
             "time": "2018-11-22T07:55:51+00:00"
         },
         {
-            "name": "monolog/monolog",
-            "version": "2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "38914429aac460e8e4616c8cb486ecb40ec90bb1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/38914429aac460e8e4616c8cb486ecb40ec90bb1",
-                "reference": "38914429aac460e8e4616c8cb486ecb40ec90bb1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2",
-                "psr/log": "^1.0.1"
-            },
-            "provide": {
-                "psr/log-implementation": "1.0.0"
-            },
-            "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
-                "doctrine/couchdb": "~1.0@dev",
-                "elasticsearch/elasticsearch": "^6.0",
-                "graylog2/gelf-php": "^1.4.2",
-                "php-amqplib/php-amqplib": "~2.4",
-                "php-console/php-console": "^3.1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
-                "phpspec/prophecy": "^1.6.1",
-                "phpunit/phpunit": "^8.5",
-                "predis/predis": "^1.1",
-                "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90 <3.0",
-                "swiftmailer/swiftmailer": "^5.3|^6.0"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mbstring": "Allow to work properly with unicode symbols",
-                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
-                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
-                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
-                "php-console/php-console": "Allow sending log messages to Google Chrome",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Monolog\\": "src/Monolog"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
-            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
-            "keywords": [
-                "log",
-                "logging",
-                "psr-3"
-            ],
-            "funding": [
-                {
-                    "url": "https://github.com/Seldaek",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-05-22T08:12:19+00:00"
-        },
-        {
             "name": "nikic/fast-route",
             "version": "v1.3.0",
             "source": {
@@ -3169,12 +3057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "499fb201e495ef0064da064f520c845d3638fe24"
+                "reference": "6d2e5ab854782830911ddd33b7d4649b9f18c10f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/499fb201e495ef0064da064f520c845d3638fe24",
-                "reference": "499fb201e495ef0064da064f520c845d3638fe24",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/6d2e5ab854782830911ddd33b7d4649b9f18c10f",
+                "reference": "6d2e5ab854782830911ddd33b7d4649b9f18c10f",
                 "shasum": ""
             },
             "conflict": {
@@ -3218,8 +3106,8 @@
                 "doctrine/orm": ">=2,<2.4.8|>=2.5,<2.5.1",
                 "dolibarr/dolibarr": "<11.0.4",
                 "dompdf/dompdf": ">=0.6,<0.6.2",
-                "drupal/core": ">=7,<7.70|>=8,<8.7.14|>=8.8,<8.8.6",
-                "drupal/drupal": ">=7,<7.70|>=8,<8.7.14|>=8.8,<8.8.6",
+                "drupal/core": ">=7,<7.72|>=8,<8.8.8|>=8.9,<8.9.1|>=9,<9.0.1",
+                "drupal/drupal": ">=7,<7.72|>=8,<8.8.8|>=8.9,<8.9.1|>=9,<9.0.1",
                 "endroid/qr-code-bundle": "<3.4.2",
                 "enshrined/svg-sanitize": "<0.13.1",
                 "erusev/parsedown": "<1.7.2",
@@ -3446,7 +3334,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-17T06:37:54+00:00"
+            "time": "2020-06-19T13:23:43+00:00"
         }
     ],
     "aliases": [],
